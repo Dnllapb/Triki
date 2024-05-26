@@ -20,7 +20,7 @@ if (gano()) {
 
 
 }
- 
+ //Funcion que recorre el arreglo por posicion 
 const gano = () =>{
     if(tablero [0] == tablero[1] && tablero [0] == tablero[2] && tablero [0])
         {
@@ -66,8 +66,7 @@ const resetTablero = () => {
     for (let i = 0; i < 9; i++) {
         tablero[i] = null;
     }
-
-
+    
     document.querySelectorAll('button').forEach(btn => {
         btn.style.backgroundColor = ''; // Restablece el color de fondo
     })

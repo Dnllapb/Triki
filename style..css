@@ -1,10 +1,87 @@
-button{
-    width: 200px;
-    height: 200px;
+/* Reset some default browser styles */
+body, html, div, button, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-#container{
-    display: grid ;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 600px;
-    margin: auto;
+
+/* Body and html styles */
+body, html {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
+
+/* Body styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Content styles */
+.content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Centering the paragraph */
+p {
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Container styles */
+#container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Button styles */
+button {
+    width: 100px;
+    height: 100px;
+    font-size: 2rem;
+    cursor: pointer;
+    border: 2px solid #333;
+    background-color: #fff;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #9e0799;
+    transform: scale(1.1);
+}
+
+button:focus {
+    outline: none;
+    background-color: #ff9999;
+}
+
+/* Footer styles */
+footer {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    font-size: 1rem;
+}
+
+/* Additional enhancements */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
